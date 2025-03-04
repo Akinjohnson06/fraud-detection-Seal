@@ -3,13 +3,13 @@ import pandas as pd
 import joblib
 
 # Load the trained model
-model = joblib.load("C:/Users/AKIN-JOHNSON/Desktop/DevSeal/fraud_detection_model.pkl")
+model = joblib.load("fraud_detection_model.pkl")
 
 # Load the Label Encoder for the Transaction Type column
-label_encoder = joblib.load("C:/Users/AKIN-JOHNSON/Desktop/DevSeal/label_encoder.pkl")
+label_encoder = joblib.load("label_encoder.pkl")
 
 # Load the pre-trained StandardScaler
-scaler = joblib.load("C:/Users/AKIN-JOHNSON/Desktop/DevSeal/standard_scaler.pkl")
+scaler = joblib.load("standard_scaler.pkl")
 
 # Function to preprocess input data
 def preprocess_input(data):
